@@ -1,7 +1,7 @@
 {
   "jps": "https://raw.githubusercontent.com/jelastic-jps/mysql-cluster/master/addons/auto-clustering/auto-cluster.jps",
-  "defaultState": true,
   "description": "<p>Ready-to-work scalable MySQL Cluster with master-slave asynchronous replication and ProxySQL load balancer in front of it. Is supplied with embedded Orchestrator GUI for convenient cluster management and provides even load distribution, slaves healthcheck and autodiscovery of newly added DB nodes</p>",
+  "defaultState": true,
   "settings": {
     "fields": [
       {
@@ -15,5 +15,9 @@
         }
       }
     ]
-  }
+  },
+  "nodeGroup": {
+    "scalingMode": "NEW"
+  },
+  "compatAddons": ["mysql-auto-cluster"]
 }
