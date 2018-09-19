@@ -1,4 +1,5 @@
 {
+  "type"        : "universal",
   "jps"         : "https://raw.githubusercontent.com/jelastic-jps/glassfish/master/addons/auto-cluster.jps",
   "description" : "Auto-clustering: transforming standalone nodes to cluster",
   "defaultState": true
