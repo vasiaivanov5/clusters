@@ -16,8 +16,8 @@
       }
     ]
   },
-  "nodeGroup": {
+  "nodeGroupData": {
     "scalingMode": "NEW"
   },
-  "compatAddons": ["mysql-auto-cluster"]
+  "compatibleAddons": ["mysql-auto-cluster"]
 }
