@@ -1,7 +1,10 @@
 {
   "type"        : "universal",
-  "jps"         : "https://raw.githubusercontent.com/jelastic-jps/glassfish/master/addons/auto-cluster.jps",
-  "description" : "Auto-clustering: transforming standalone nodes to cluster",
+  "jps"         : "https://raw.githubusercontent.com/jelastic-jps/glassfish/master/addons/auto-cluster.jps",  
   "defaultState": true,
-  "compatibleAddons": ["glassfish-cluster-addon"]
+  "compatibleAddons": ["glassfish-cluster-addon"],
+  "nodeGroupData": {
+    "skipNodeEmails": true
+  },
+  "description" : "Auto-clustering: transforming standalone nodes to cluster"
 }
