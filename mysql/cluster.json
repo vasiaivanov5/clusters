@@ -19,5 +19,18 @@
       }
     ]
   },
+  "validation": {
+    "minCount": 2,
+    "scalingMode": "NEW",
+    "rules": [
+      {
+        "scheme": {
+          "mm": {
+            "maxCount": 2
+          }
+        }
+      }
+    ]
+  },
   "description": "<p>Ready-to-work scalable MySQL Cluster with master-slave asynchronous replication and ProxySQL load balancer in front of it. Is supplied with embedded Orchestrator GUI for convenient cluster management and provides even load distribution, slaves healthcheck and autodiscovery of newly added DB nodes</p>"
 }
