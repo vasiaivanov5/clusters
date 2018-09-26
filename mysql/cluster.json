@@ -6,7 +6,7 @@
   },
   "compatibleAddons": ["mysql-auto-cluster"],
   "settings": {
-    "data": { "scheme": "mm"},
+    "data": { "scheme": "mm" },
     "fields": [
       {
         "type": "list",
