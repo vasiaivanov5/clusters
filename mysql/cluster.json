@@ -6,12 +6,12 @@
   },
   "compatibleAddons": ["mysql-auto-cluster"],
   "settings": {
+    "data": { "scheme": "mm"},
     "fields": [
       {
         "type": "list",
         "caption": "Scheme",
         "name": "scheme",
-        "default": "mm",
         "values": {
           "mm": "Master - Master",
           "ms": "Master - Slave"
