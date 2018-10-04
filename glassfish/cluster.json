@@ -1,5 +1,5 @@
 {
-  "type"        : "universal",
+  "onlyNew"     : false,
   "jps"         : "https://raw.githubusercontent.com/jelastic-jps/glassfish/master/addons/auto-cluster.jps",  
   "defaultState": true,
   "compatibleAddons": ["glassfish-cluster-addon"],
