@@ -15,13 +15,15 @@
             "name": "scheme",
             "values": [{
                    "value": "master",
-                   "caption": "Master - Master"
+                   "caption": "Master - Master",
+                   "tooltip": "Tip Master - Master"
                }, {
                    "value": "slave",
                    "caption": "Master - Slave"
                }, {
                    "value": "multi",
-                   "caption": "Multi MGR"
+                   "caption": "Multi MGR",
+                   "tooltip": "Tip Multi MGR"
                }, {
                    "value": "single",
                    "caption": "Single MGR"
