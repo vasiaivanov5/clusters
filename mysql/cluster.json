@@ -23,10 +23,11 @@
                }, {
                    "value": "multi",
                    "caption": "Multi MGR",
-                   "tooltip": "Tip Multi MGR"
+                   "tooltip": "Mysql Group Replication cluster in Multi-Primary mode"
                }, {
                    "value": "single",
-                   "caption": "Single MGR"
+                   "caption": "Single MGR",
+                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
                }
            ]
         }]
