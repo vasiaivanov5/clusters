@@ -13,12 +13,20 @@
             "type": "list",
             "caption": "Scheme",
             "name": "scheme",
-            "values": {
-                "master": "Master - Master",
-                "slave": "Master - Slave",
-                "multi": "Multi MGR",
-                "single": "Single MGR"
-            }
+            "values": [{
+                   "value": "master",
+                   "caption": "Master - Master"
+               }, {
+                   "value": "slave",
+                   "caption": "Master - Slave"
+               }, {
+                   "value": "multi",
+                   "caption": "Multi MGR"
+               }, {
+                   "value": "single",
+                   "caption": "Single MGR"
+               }
+           ]
         }]
     },
     "validation": {
