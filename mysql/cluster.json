@@ -1,36 +1,48 @@
 {
-  "jps": "https://raw.githubusercontent.com/sych74/mysql-cluster-1/master/addons/auto-clustering/auto-cluster.jps",
-  "defaultState": true,
-  "nodeGroupData": {
-    "scalingMode": "NEW"
-  },
-  "compatibleAddons": ["mysql-auto-cluster"],
-  "settings": {
-    "data": { "scheme": "slave" },
-    "fields": [
-      {
-        "type": "list",
-        "caption": "Scheme",
-        "name": "scheme",
-        "values": {
-          "master": "Master - Master",
-          "slave": "Master - Slave",
-          "multi": "Multi MGR",
-          "single": "Single MGR"
+    "jps": "https://raw.githubusercontent.com/sych74/mysql-cluster-1/master/addons/auto-clustering/auto-cluster.jps",
+    "defaultState": true,
+    "nodeGroupData": {
+        "scalingMode": "NEW"
+    },
+    "compatibleAddons": ["mysql-auto-cluster"],
+    "settings": {
+        "data": {
+            "scheme": "slave"
+        },
+        "fields": [{
+            "type": "list",
+            "caption": "Scheme",
+            "name": "scheme",
+            "values": {
+                "master": "Master - Master",
+                "slave": "Master - Slave",
+                "multi": "Multi MGR",
+                "single": "Single MGR"
+            }
+        }]
+    },
+    "validation": {
+        "scalingMode": "NEW",
+        "rules": {
+            "scheme": {
+                "master": {
+                    "minCount": 2,
+                    "maxCount": 2
+                },
+                "slave": {
+                    "minCount": 2,
+                    "maxCount": 2
+                },
+                "single": {
+                    "minCount": 3,
+                    "maxCount": 11
+                },
+                "multi": {
+                    "minCount": 3,
+                    "maxCount": 11
+                }
+            }
         }
-      }
-    ]
-  },
-  "validation": {
-    "minCount": 2,
-    "scalingMode": "NEW",
-    "rules": {
-      "scheme": {
-        "mm": {
-          "maxCount": 2
-        }
-      }
-    }
-  },
-  "description": "<p>Ready-to-work scalable MySQL Cluster with master-slave asynchronous replication and ProxySQL load balancer in front of it. Is supplied with embedded Orchestrator GUI for convenient cluster management and provides even load distribution, slaves healthcheck and autodiscovery of newly added DB nodes</p>"
+    },
+    "description": "<p>Ready-to-work scalable MySQL Cluster with master-slave asynchronous replication and ProxySQL load balancer in front of it. Is supplied with embedded Orchestrator GUI for convenient cluster management and provides even load distribution, slaves healthcheck and autodiscovery of newly added DB nodes</p>"
 }
