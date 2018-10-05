@@ -1,20 +1,22 @@
 {
-  "jps": "https://raw.githubusercontent.com/jelastic-jps/mysql-cluster/master/addons/auto-clustering/auto-cluster.jps",
+  "jps": "https://raw.githubusercontent.com/sych74/mysql-cluster-1/master/addons/auto-clustering/auto-cluster.jps",
   "defaultState": true,
   "nodeGroupData": {
     "scalingMode": "NEW"
   },
   "compatibleAddons": ["mysql-auto-cluster"],
   "settings": {
-    "data": { "scheme": "mm" },
+    "data": { "scheme": "slave" },
     "fields": [
       {
         "type": "list",
         "caption": "Scheme",
         "name": "scheme",
         "values": {
-          "mm": "Master - Master",
-          "ms": "Master - Slave"
+          "master": "Master - Master",
+          "slave": "Master - Slave",
+          "multi": "Multi MGR",
+          "single": "Single MGR"
         }
       }
     ]
