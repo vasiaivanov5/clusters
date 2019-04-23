@@ -1,0 +1,5 @@
+type: update
+name: Addon installation
+
+onInstall:
+  api [cp123]: environment.control.RestartNodesByGroup3
